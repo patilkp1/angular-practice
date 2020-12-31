@@ -1,0 +1,8 @@
+<p>
+	shipping Price !!
+</p>
+<div class="shipping-item" *ngFor="let shippingdata of shipping | async">
+	<span>{{ shippingdata.type }}</span>
+	<span>{{ shippingdata.price | currency }}</span>
+
+</div>
